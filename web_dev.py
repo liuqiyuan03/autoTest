@@ -24,6 +24,10 @@ def index(request):
 def pythonpath(request):
     return "<h1>hello python </h1>"
 
+@Route.register("/java")
+def javapath(request):
+	return "<h1>hello java</h1>"
+
 class Application:
     _Route = Route
 
